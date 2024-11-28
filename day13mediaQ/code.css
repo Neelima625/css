@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.C{
+    display: flex;
+    gap: 50px;
+}
+.A{
+    display: none;
+}
+.B{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .parent{
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;  
+        position: relative;  
+    }
+    .C{
+        display: none;
+        position: absolute;
+        top: 50px;
+        gap: 20px;
+        background-color: brown;
+        width: 100%;
+        align-items: center;
+    }
+    .A{
+        display: block;
+    }
+    .B:checked ~ p{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media screen and (min-width:601px) and (max-width:1024px){
+    .parent{
+        background-color: chartreuse;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;  
+        position: relative;  
+    }
+    .C{
+        display: none;
+        position: absolute;
+        top: 50px;
+        gap: 20px;
+        background-color: violet;
+        width: 100%;
+        align-items: center;
+    }
+    .A{
+        display: block;
+    }
+    .B:checked ~ p{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+    .parent{
+        background-color: chartreuse;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;  
+        position: relative;  
+    }
+    .C{
+        display: none;
+        position: absolute;
+        top: 50px;
+        gap: 20px;
+        background-color: violet;
+        width: 100%;
+        align-items: center;
+    }
+    .A{
+        display: block;
+    }
+    .B:checked ~ p{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
